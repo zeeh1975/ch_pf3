@@ -1,0 +1,8 @@
+node_modules/
+logs/*
+!logs/
+.env
+Clase 36 - Twilio _ OWASP.lnk
+Clase 35 - Envío de mensajes y Seguridad.lnk
+uploads/avatars/*
+!uploads/avatars/
