@@ -1,5 +1,5 @@
 
-## **Backend Coderhouse - Clase 36: Tercera entrega del Proyecto Final**
+# **Backend Coderhouse - Clase 36: Tercera entrega del Proyecto Final**
  
 *Se debe entregar:* 
 
@@ -34,9 +34,9 @@ c. Incluir un archivo de configuración (config) que contenga los datos correspo
 
 **Notas:**
 
-*Detalle de rutas*
+### *Detalle de rutas*
 Ruta|Metodo|Accion|Tipo parametros
--|-|-|-|-
+-|-|-|-
 /api/productos/|GET|Lista todos los productos|N/A
 /api/productos/|POST|Agrega un nuevo producto|JSON
 /api/productos/:id|GET|Obtiene el producto identificado por id|N/A
@@ -60,7 +60,8 @@ Ruta|Metodo|Accion|Tipo parametros
 /profile|GET|Devuelve la pagina de perfil de usuario|N/A
 /cart|GET|Devuelve la pagina con el carrito|N/A
 
-*Resultado perfilamiento con Artillery*
+
+### *Resultado perfilamiento con Artillery*
 
 En ambos casos se simularon 30VU por segundo, durante 8 minutos.
 
