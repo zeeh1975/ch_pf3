@@ -1,3 +1,4 @@
+const logger = require("../logger");
 const { Router } = require("express");
 const { passport } = require("../middleware/passport");
 const { postLogin, postLoginFailed, getLoginPage } = require("../controllers/loginController");
@@ -19,7 +20,8 @@ var storageAvatars = multer.diskStorage({
 var uploadAvatar = multer({ storage: storageAvatars });
 
 function errorHandler(err, req, res, next) {
-  return res.status(401).send({ success: false, message: err });
+  logger.error(err.message);
+  return res.status(401).send({ success: false, message: "No se encuentra autorizado" });
 }
 
 router
